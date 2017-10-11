@@ -1,0 +1,59 @@
+﻿<div class="container">
+    <a routerLink="/cars/add" class="btn btn-primary">create  a new car </a>    
+    <input type="text" [(ngModel)]="searchText" placeholder="search car" />
+    <a routerLink="" (click)="logout();" class="btn btn-primary">Logout</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Price</th>
+                <th>New</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of items | category: searchText | paginate: {itemsPerPage: 1, currentPage:page, id: '1'}; let i = index">
+                <td>{{car.brand}}</td>
+                <td>{{car.model}}</td>
+                <td>{{car.year}}</td>
+                <td>{{car.price}}</td>
+                <td>{{car.new}}</td>
+                <td><a routerLink="/cars/editCar/{{car.id}}" class="">edit</a></td>
+            </tr>            
+        </tbody>
+    </table>
+
+   
+    <pagination-controls (pageChange)="page = $event" id="1"
+                         maxSize="7"
+                         directionLinks="true"
+                         autoHide="true">
+    </pagination-controls>`
+</div>
+
+<!--<div *ngFor="let car of items | category: searchText | paginate: {itemsPerPage: 1, currentPage:page, id: '1'}; let i = index">
+    <div>
+        <div class="row ml-2">
+            <div class="breadcrumb ml-2">
+                <span>{{car.brand}}</span>
+            </div>
+            <div class="breadcrumb ml-2">
+                <span>{{car.model}}</span>
+            </div>
+            <div class="breadcrumb ml-2">
+                <span>{{car.year}}</span>
+            </div>
+            <div class="breadcrumb ml-2">
+                <span>{{car.price}}</span>
+            </div>
+            <div class="breadcrumb ml-2">
+                <span>{{car.new}}</span>
+            </div>
+            <div class="btn-group m-2">
+                <a routerLink="/cars/editCar/{{car.id}}" class="breadcrumb-item">edit</a>
+            </div>
+        </div>
+    </div>
+</div>-->
