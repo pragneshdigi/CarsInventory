@@ -1,0 +1,46 @@
+﻿<div class="">
+    <h4>Edit Car</h4>
+</div>
+<div *ngIf="item" class="card-text">
+    <form (ngSubmit)="editCar()">
+        <div class="form-group">
+            <div class="col-xl-6 form-group">
+                <label for="name">Brand</label>
+                <input [(ngModel)]="item.brand" name="brand" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xl-6 form-group">
+                <label for="comments">Model</label>
+                <input [(ngModel)]="item.model" name="model" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xl-6 form-group">
+                <label for="name">Year</label>
+                <input [(ngModel)]="item.year" name="year" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xl-6 form-group">
+                <label for="comments">Price</label>
+                <input [(ngModel)]="item.price" name="price" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xl-6 form-group">
+                <label for="new">IsNew</label>                
+                <input type="checkbox" name="new"
+                       value="item.new"
+                       [checked]="item.new === true"
+                       (change)="onCheckChange($event.target.checked)"
+                       class="form-control" /> 
+            </div>
+        </div>
+        <div class="row m-2">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a routerLink="/cars" class="btn btn-default">Cancel</a>
+        </div>
+    </form>
+</div>
+
