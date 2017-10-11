@@ -1,0 +1,10 @@
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\bin\Debug\netcoreapp1.1\CarsInventory.deps.json
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\bin\Debug\netcoreapp1.1\CarsInventory.runtimeconfig.json
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\bin\Debug\netcoreapp1.1\CarsInventory.runtimeconfig.dev.json
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\bin\Debug\netcoreapp1.1\CarsInventory.dll
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\bin\Debug\netcoreapp1.1\CarsInventory.pdb
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\obj\Debug\netcoreapp1.1\CarsInventory.csprojResolveAssemblyReference.cache
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\obj\Debug\netcoreapp1.1\CarsInventory.csproj.CoreCompileInputs.cache
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\obj\Debug\netcoreapp1.1\CarsInventory.AssemblyInfo.cs
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\obj\Debug\netcoreapp1.1\CarsInventory.dll
+D:\Freelance\Ventive\Code\CarsInventory\CarsInventory\obj\Debug\netcoreapp1.1\CarsInventory.pdb
